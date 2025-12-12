@@ -26,9 +26,7 @@ export default function PageHero({ title, image, isHome = false }: PageHeroProps
       <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-6">
           {isHome ? (
-            <>
-              {title} <span className="text-primary-foreground/80 block text-2xl md:text-3xl mt-4 font-normal">Building Digital Excellence</span>
-            </>
+            "Building Digital Excellence"
           ) : (
             title
           )}
