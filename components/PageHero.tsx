@@ -21,10 +21,10 @@ export default function PageHero({ title, image, isHome = false }: PageHeroProps
           backgroundPosition: 'center',
         }}
       />
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      <div className="absolute inset-0 bg-black/70 z-10" />
       
       <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-6">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight mb-6 drop-shadow-md">
           {isHome ? (
             "Building Digital Excellence"
           ) : (
@@ -32,7 +32,7 @@ export default function PageHero({ title, image, isHome = false }: PageHeroProps
           )}
         </h1>
         {isHome && (
-          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto drop-shadow-md">
             We are a creative digital agency crafting beautiful experiences for brands across the globe.
           </p>
         )}
